@@ -1,9 +1,9 @@
-# currency_converter/views.py
-from rest_framework import status
+from .serializers import CurrencyConverterSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import status
 import requests
-from .serializers import CurrencyConverterSerializer
+
 
 
 
@@ -18,7 +18,6 @@ class CurrencyConverterView(APIView):
             to_currency = validated_data['to_currency']
             amount = validated_data['amount']
 
-            # Continue with making the API request and handling the response
             api_url = f"https://api.apilayer.com/exchangerates_data/convert?from={from_currency}&to={to_currency}&amount={amount}"
             headers = {"apikey": "gV3QWy48LLuNyypt5IFw7g82T5cNw72x"}
             
