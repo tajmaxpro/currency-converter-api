@@ -6,10 +6,8 @@ import requests
 
 
 
-
 class CurrencyConverterView(APIView):
     def get(self, request):
-        # Deserialize and validate the request data
         serializer = CurrencyConverterSerializer(data=request.query_params)
 
         if serializer.is_valid():
