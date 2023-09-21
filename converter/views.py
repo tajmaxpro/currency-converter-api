@@ -25,7 +25,7 @@ class CurrencyConverterView(APIView):
                 data = response.json()
                 converted_value = data.get("result")
                 return Response({"result": round(converted_value, 2)}, status=status.HTTP_200_OK)
-
             return Response({"error": "Unable to perform currency conversion"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            
