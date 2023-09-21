@@ -27,7 +27,7 @@ class CurrencyConverterView(APIView):
             if response.status_code == 200:
                 data = response.json()
                 converted_value = data.get("result")
-                return Response({"result": converted_value}, status=status.HTTP_200_OK)
+                return Response({"result": round(converted_value, 2)}, status=status.HTTP_200_OK)
 
             return Response({"error": "Unable to perform currency conversion"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
