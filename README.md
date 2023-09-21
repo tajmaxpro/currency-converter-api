@@ -1,7 +1,7 @@
 # Currency Converter API
 
 ## Description
-This project is a RESTful API for converting currencies using an external exchange rate data service.
+This project is a RESTful API for converting currencies using an external [Exchange Rates Data API](https://apilayer.com/marketplace/exchangerates_data-api) service.
 
 ## Features
 - Convert currencies based on real-time exchange rates.
