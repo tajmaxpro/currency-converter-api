@@ -72,19 +72,19 @@ Request Parameters:
 
 *Example Request:*
 
-    ```
+    
     GET /api/convert/?from_currency=USD&to_currency=RUB&amount=1
-    ```
+   
 
 *Example Response:*
 
-    ```
+   
     {
 
     "result": 96.02
 
     }
-    ```
+    
 
 **Contact**
 
