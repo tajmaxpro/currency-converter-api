@@ -23,7 +23,6 @@ To test the project on your local machine, follow these steps:
 1. Clone the repository:
 
     ```
-   bash
    git clone https://github.com/tajmaxpro/currency-converter-api.git
    cd currency-converter-api
     ```   
